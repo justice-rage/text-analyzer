@@ -32,3 +32,4 @@ const text = "";
 const word = "red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 0
+
