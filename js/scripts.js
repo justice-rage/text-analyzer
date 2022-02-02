@@ -50,11 +50,13 @@ function boldPassage(word, text) {
   return htmlString + "</p>";
 }
 
-// function threeMostUsedWordsInText(word, text) {
+function threeMostUsedWordsInText(word, text) {
+  let wordCountList = [];
+  const wordArray = text.split(" ");
 //  find 1st most used word
 //  find 2nd most used word
 //  find 3rd most used word
-// }
+}
 
 // UI Logic
 
