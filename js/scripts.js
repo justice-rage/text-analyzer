@@ -34,22 +34,6 @@ function numberOfOccurrencesInText(word, text) {
   return wordCount;
 }
 
-// UI Logic
-
-$(document).ready(function(){
-  $("form#word-counter").submit(function(event){
-    event.preventDefault();
-    const passage = $("#text-passage").val();
-    const word = $("#word").val();
-    const wordCount = wordCounter(passage);
-    const occurrencesOfWord = numberOfOccurrencesInText(word, passage);
-    $("#total-count").html(wordCount);
-    $("#selected-count").html(occurrencesOfWord);
-
-    $("#bolded-passage").html(boldPassage(word, passage));
-  });
-});
-
 function boldPassage(word, text) {
   let htmlString = "<p>";
   let textArray = text.split(" ");
@@ -65,3 +49,25 @@ function boldPassage(word, text) {
   });
   return htmlString + "</p>";
 }
+
+// function threeMostUsedWordsInText(word, text) {
+//  find 1st most used word
+//  find 2nd most used word
+//  find 3rd most used word
+// }
+
+// UI Logic
+
+$(document).ready(function(){
+  $("form#word-counter").submit(function(event){
+    event.preventDefault();
+    const passage = $("#text-passage").val();
+    const word = $("#word").val();
+    const wordCount = wordCounter(passage);
+    const occurrencesOfWord = numberOfOccurrencesInText(word, passage);
+    $("#total-count").html(wordCount);
+    $("#selected-count").html(occurrencesOfWord);
+
+    $("#bolded-passage").html(boldPassage(word, passage));
+  });
+});
