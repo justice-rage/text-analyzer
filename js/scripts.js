@@ -41,3 +41,7 @@ $(document).ready(function(){
     $("#selected-count").html(occurrencesOfWord);
   });
 });
+
+function boldPassage(word, text) {
+  return "<p>" + text + "</p>";
+}
