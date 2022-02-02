@@ -51,12 +51,16 @@ function boldPassage(word, text) {
 }
 
 function threeMostUsedWordsInText(word, text) {
-  let wordCountList = [];
-  const wordArray = text.split(" ");
+  let countedWords = [];
+  const wordArray = text.toLowerCase().split(" ");
+  wordArray.forEach(function(word)  {
+    let numberCount = numberOfOccurrencesInText(word, text);
+  }
+    )
 //  find 1st most used word
 //  find 2nd most used word
 //  find 3rd most used word
-}
+})
 
 // UI Logic
 
