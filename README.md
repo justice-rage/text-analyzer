@@ -90,3 +90,9 @@ const word = "hello";
 const text = "hello there";
 boldPassage(word, text);
 Expected Output: "<p><b>hello</b> there</p>"
+
+Description: threeMostUsedWordsInText()
+
+Test: "It should return the number of times a word occurs."
+Code:
+Expected Output:
