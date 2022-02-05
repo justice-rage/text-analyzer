@@ -93,6 +93,6 @@ Expected Output: "<p><b>hello</b> there</p>"
 
 Description: threeMostUsedWordsInText()
 
-Test: "It should return the number of times a word occurs."
+Test: "Return ."
 Code:
 Expected Output:
